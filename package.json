@@ -1,26 +1,10 @@
 {
   "author": "Scott Sauyet <scott@sauyet.com> (scott.sauyet.com)",
   "contributors": [
-    {
-      "name": "Michael Hurley",
-      "email": "mh@buzzdecafe.com",
-      "web": "http://buzzdecafe.com"
-    },
-    {
-      "name": "Scott Sauyet",
-      "email": "scott@sauyet.com",
-      "web": "http://fr.umio.us"
-    },
-    {
-      "name": "David Chambers",
-      "email": "dc@davidchambers.me",
-      "web": "http://davidchambers.me"
-    },
-    {
-      "name": "Graeme Yeates",
-      "email": "yeatesgraeme@gmail.com",
-      "web": "https://github.com/megawac"
-    }
+    "Michael Hurley <mh@buzzdecafe.com> (http://buzzdecafe.com)",
+    "Scott Sauyet <scott@sauyet.com> (http://fr.umio.us)",
+    "David Chambers <dc@davidchambers.me> (http://davidchambers.me)",
+    "Graeme Yeates <yeatesgraeme@gmail.com> (https://github.com/megawac)"
   ],
   "name": "ramda",
   "description": "A practical functional library for JavaScript programmers.",
