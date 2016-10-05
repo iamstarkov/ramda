@@ -33,9 +33,10 @@
   },
   "main": "src",
   "scripts": {
+    "build": "browserify -e src/index.js -o dist/ramda.js -s R",
+    "minify": "uglifyjs dist/ramda.js -o dist/ramda.min.js",
     "bench": "scripts/benchRunner",
     "bookmarklet": "scripts/bookmarklet",
-    "build": "make && make dist/ramda.min.js",
     "clean": "rimraf dist/* coverage/*",
     "precoverage": "npm run pretest",
     "coverage": "istanbul cover node_modules/.bin/_mocha -- --reporter spec",
