@@ -88,27 +88,15 @@ var R = require('ramda');
 To use directly in the browser:
 
 ```html
-<script src="path/to/yourCopyOf/ramda.js"></script>
-```
+<!-- version 0.22.1 (fixed) -->
+<script src="https://unpkg.com/ramda@0.22.1/dist/ramda.js"></script>
+<!-- version 0.22.1 (fixed), minified -->
+<script src="https://unpkg.com/ramda@0.22.1/dist/ramda.min.js"></script>
 
-or the minified version:
-
-```html
-<script src="path/to/yourCopyOf/ramda.min.js"></script>
-```
-
-or from a CDN, either cdnjs:
-
-```html
-<script src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.22.1/ramda.min.js"></script>
-```
-
-or one of the below links from [jsDelivr](http://jsdelivr.com):
-
-```html
-<script src="//cdn.jsdelivr.net/ramda/0.22.1/ramda.min.js"></script>
-<script src="//cdn.jsdelivr.net/ramda/0.22/ramda.min.js"></script>
-<script src="//cdn.jsdelivr.net/ramda/latest/ramda.min.js"></script>
+<!-- latest version -->
+<script src="https://unpkg.com/ramda/dist/ramda.js"></script>
+<!-- latest version, minified -->
+<script src="https://unpkg.com/ramda/dist/ramda.min.js"></script>
 ```
 
 (note that using `latest` is taking a significant risk that ramda API changes could break your code.)
