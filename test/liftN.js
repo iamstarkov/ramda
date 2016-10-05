@@ -56,12 +56,10 @@ describe('liftN', function() {
     eq(typeof convergedOnInt, 'function');
     eq(typeof convergedOnBool, 'function');
     eq(convergedOnInt(10), (10 + 2) + (10 * 3) + (4 - 10));
-    // jscs:disable disallowYodaConditions
     eq(convergedOnBool(0), (0 > 0) && (0 < 3));
     eq(convergedOnBool(1), (1 > 0) && (1 < 3));
     eq(convergedOnBool(2), (2 > 0) && (2 < 3));
     eq(convergedOnBool(3), (3 > 0) && (3 < 3));
-    // jscs:enable disallowYodaConditions
   });
 
 });
