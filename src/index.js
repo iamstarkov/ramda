@@ -232,5 +232,5 @@ module.exports = {
   xprod: require('./xprod'),
   zip: require('./zip'),
   zipObj: require('./zipObj'),
-  zipWith: require('./zipWith'),
+  zipWith: require('./zipWith')
 }
