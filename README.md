@@ -103,7 +103,7 @@ To use directly in the browser:
 
 These script tags add the variable `R` on the browser's global scope.
 
-Or you can inject ramda into virtually any unsuspecting website using [ramdify][ramdify] bookmarklet.
+Or you can inject ramda into virtually any unsuspecting website using [ramdify][ramdify] bookmarklet (add it from [Ramda website](http://ramdajs.com#installation) installation section).
 
 [ramdify]: javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://unpkg.com/ramda/dist/ramda.min.js';})();)
 
