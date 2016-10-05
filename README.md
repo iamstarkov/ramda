@@ -12,10 +12,10 @@ A practical functional library for Javascript programmers.
 Why Ramda?
 ----------
 
-<img src="http://ramda.jcphillipps.com/logo/ramdaFilled_200x235.png" 
+<img src="http://ramda.jcphillipps.com/logo/ramdaFilled_200x235.png"
      width="170" height="190" align="right" hspace="12" />
 
-There are already several excellent libraries with a functional flavor. Typically, they are meant to be general-purpose toolkits, suitable for working in multiple paradigms. Ramda has a more focused goal. We wanted a library designed specifically for a functional programming style, one that makes it easy to create functional pipelines, one that never mutates user data. 
+There are already several excellent libraries with a functional flavor. Typically, they are meant to be general-purpose toolkits, suitable for working in multiple paradigms. Ramda has a more focused goal. We wanted a library designed specifically for a functional programming style, one that makes it easy to create functional pipelines, one that never mutates user data.
 
 
 What's Different?
@@ -23,14 +23,14 @@ What's Different?
 
 The primary distinguishing features of Ramda are:
 
-* Ramda emphasizes a purer functional style. Immutability and side-effect free functions 
-  are at the heart of its design philosophy. This can help you get the job done with simple, 
+* Ramda emphasizes a purer functional style. Immutability and side-effect free functions
+  are at the heart of its design philosophy. This can help you get the job done with simple,
   elegant code.
 
-* Ramda functions are automatically curried. This allows you to easily build up new functions 
+* Ramda functions are automatically curried. This allows you to easily build up new functions
   from old ones simply by not supplying the final parameters.
 
-* The parameters to Ramda functions are arranged to make it convenient for currying. The data 
+* The parameters to Ramda functions are arranged to make it convenient for currying. The data
   to be operated on is generally supplied last.
 
 The last two points together make it very easy to build functions as sequences of simpler functions, each of which transforms the data and passes it along to the next. Ramda is designed to support this style of coding.
@@ -51,7 +51,7 @@ Philosophy
 ----------
 Using Ramda should feel much like just using Javascript.
 It is practical, functional Javascript. We're not introducing
-lambda expressions in strings, we're not borrowing consed 
+lambda expressions in strings, we're not borrowing consed
 lists, we're not porting over all of the Clojure functions.
 
 Our basic data structures are plain Javascript objects, and our
@@ -59,7 +59,7 @@ usual collections are Javascript arrays. We also keep other
 native features of Javascript, such as functions as objects
 with properties.
 
-Functional programming is in good part about immutable objects and 
+Functional programming is in good part about immutable objects and
 side-effect free functions. While Ramda does not *enforce* this, it
 enables such style to be as frictionless as possible.
 
@@ -103,7 +103,9 @@ To use directly in the browser:
 
 These script tags add the variable `R` on the browser's global scope.
 
-Or you can inject ramda into virtually any unsuspecting website using [the bookmarklet](https://github.com/ramda/ramda/blob/master/BOOKMARKLET.md).
+Or you can inject ramda into virtually any unsuspecting website using [ramdify][ramdify] bookmarklet.
+
+[ramdify]: javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://unpkg.com/ramda/dist/ramda.min.js';})();)
 
 ### Build
 
@@ -116,7 +118,7 @@ It is possible to build Ramda with a subset of the functionality to reduce its f
 
     ./scripts/build -- src/compose.js src/reduce.js src/filter.js > dist/ramda.custom.js
 
-This requires having Node/io.js installed. 
+This requires having Node/io.js installed.
 
 Documentation
 -------------
@@ -126,10 +128,10 @@ Please review the [API documentation](http://ramdajs.com/docs/).
 The Name
 --------
 
-Ok, so we like sheep.  That's all.  It's a short name, not already 
-taken.  It could as easily have been `eweda`, but then we would be 
-forced to say _eweda lamb!_, and no one wants that.  For non-English 
-speakers, lambs are baby sheep, ewes are female sheep, and rams are male 
+Ok, so we like sheep.  That's all.  It's a short name, not already
+taken.  It could as easily have been `eweda`, but then we would be
+forced to say _eweda lamb!_, and no one wants that.  For non-English
+speakers, lambs are baby sheep, ewes are female sheep, and rams are male
 sheep.  So perhaps ramda is a grown-up lambda... but probably not.
 
 
@@ -175,5 +177,5 @@ Acknowledgements
 -----------------
 
 Thanks to [J. C. Phillipps](http://www.jcphillipps.com) for the Ramda logo.
-Ramda logo artwork &copy; 2014 J. C. Phillipps. Licensed Creative Commons 
+Ramda logo artwork &copy; 2014 J. C. Phillipps. Licensed Creative Commons
 [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/).
