@@ -11,4 +11,6 @@ Use this bookmarklet to load Ramda on any website. To "install":
     javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://unpkg.com/ramda/dist/ramda.min.js';})();
     ```
 
-3. [ramdify](javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://unpkg.com/ramda/dist/ramda.min.js';})();)
+3. [ramdify][bookmarklet]
+
+[bookmarklet]: javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://unpkg.com/ramda/dist/ramda.min.js';})();)
