@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var Benchmark = require('benchmark');
 var Table = require('cli-table');
 var fs = require('fs');
@@ -23,7 +21,7 @@ function prettyMoe(moe) {
 fs.readdirSync('./lib/bench').forEach(function(file) {
   var test, table;
   if (isBench.test(file)) {
-    test = require('../lib/bench/' + file);
+    test = require('./lib/bench/' + file);
     table = getTable(test.name);
     var suite = Benchmark.Suite(test.name, {
       onComplete: function() { console.log(table.toString()); }
@@ -42,4 +40,3 @@ fs.readdirSync('./lib/bench').forEach(function(file) {
     suite.run();
   }
 });
-

@@ -21,7 +21,7 @@
     "browserify": "browserify -e src/index.js -o dist/ramda.js -s R -p headerify",
     "uglify": "uglifyjs dist/ramda.js -o dist/ramda.min.js",
     "build": "npm-run-all dist browserify uglify",
-    "bench": "scripts/benchRunner",
+    "bench": "node ./bench",
     "bookmarklet": "scripts/bookmarklet",
     "clean": "rimraf dist coverage",
     "coverage": "istanbul cover _mocha -- --reporter spec",
